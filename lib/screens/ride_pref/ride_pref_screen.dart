@@ -1,3 +1,4 @@
+import 'package:bla_project/widgets/actions/bla_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/ride_pref/ride_pref.dart';
@@ -57,7 +58,7 @@ class _RidePrefScreenState extends State<RidePrefScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
 
-
+                  BlaButtons(label: 'Search', onPressed: (){}),
 
                   // 2.1 Display the Form to input the ride preferences
                   RidePrefForm(initRidePref: RidePrefService.currentRidePref,),
